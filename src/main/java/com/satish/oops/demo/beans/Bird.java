@@ -43,4 +43,22 @@ public class Bird extends Animal {
         //return empty string
         return "";
     }
+
+    /**
+     * Dynamically overwirtes the sound behaviour
+     *
+     * @param soundBehaviour
+     */
+    public void setSoundBehaviour(SoundBehaviour soundBehaviour) {
+        this.soundBehaviour = soundBehaviour;
+    }
+
+    /**
+     * Dynamically overwirtes the fly behaviour
+     *
+     * @param flyBehaviour
+     */
+    public void setFlyBehaviour(FlyBehaviour flyBehaviour) {
+        this.flyBehaviour = flyBehaviour;
+    }
 }

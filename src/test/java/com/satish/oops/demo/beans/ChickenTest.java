@@ -10,7 +10,7 @@ public class ChickenTest {
     private Chicken chicken = new Chicken();
 
     /**
-     * Tests the sound of a duck
+     * Tests the sound of a chicken
      */
     @Test
     public void testSing(){

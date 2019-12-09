@@ -11,11 +11,10 @@ import org.springframework.util.StringUtils;
  */
 public class Bird extends Animal {
 
-    private SoundBehaviour soundBehaviour;
     private FlyBehaviour flyBehaviour;
 
     public Bird(SoundBehaviour soundBehaviour, FlyBehaviour flyBehaviour) {
-        this.soundBehaviour = soundBehaviour;
+        super(soundBehaviour);
         this.flyBehaviour = flyBehaviour;
     }
 
@@ -29,28 +28,6 @@ public class Bird extends Animal {
             return flyBehaviour.fly();
         }
         return "";
-    }
-
-    /**
-     * Sing the song
-     *
-     * @return the song lyrics
-     */
-    public String sing() {
-        if (soundBehaviour != null) {
-            return soundBehaviour.sing();
-        }
-        //return empty string
-        return "";
-    }
-
-    /**
-     * Dynamically overwirtes the sound behaviour
-     *
-     * @param soundBehaviour
-     */
-    public void setSoundBehaviour(SoundBehaviour soundBehaviour) {
-        this.soundBehaviour = soundBehaviour;
     }
 
     /**

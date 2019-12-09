@@ -1,5 +1,8 @@
 package com.satish.oops.demo.beans;
 
+/**
+ * Define a animal
+ */
 public class Animal {
     public void walk(){
         System.out.println("I am walking");

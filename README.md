@@ -11,3 +11,6 @@ This is a sample repository to demo oops concepts, specifically modeling objects
 
 ### Class Diagram
 ![Class Diagram](docs/classDig.png)
+
+### Build Status
+[![CircleCI](https://circleci.com/gh/er-satish/oops-demo.svg?style=svg)](https://circleci.com/gh/er-satish/oops-demo)
